@@ -6,10 +6,10 @@ import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import Books from "./components/Books";
 import Book from "./components/Book";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Content />}></Route>
@@ -20,7 +20,7 @@ function App() {
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
