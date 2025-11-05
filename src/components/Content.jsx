@@ -2,7 +2,7 @@ const Content = () => {
   return (
     <main className="content-container">
       <img
-        src="/src/images/main_content.png"
+        src="/images/main_content.png"
         alt="content"
         className="content-image"
       />
